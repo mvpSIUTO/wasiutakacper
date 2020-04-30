@@ -1,0 +1,54 @@
+var portfolioApp = angular.module('portfolioApp',[]);
+
+portfolioApp.controller('GalleryListCtrl', function($scope) {
+
+$scope.galleries = [
+{ 
+ 'title':'Rzym',
+ 'when':'2015-12-14',
+ 'thumbnailUrl':'obrazy/obraz1.jpg'
+},
+{
+ 'title':'Maroko',
+ 'when':'2014-08-04',
+ 'thumbnailUrl':'obrazy/obraz2.jpg'
+},
+{
+ 'title':'Tajlandia',
+ 'when':'2014-08-04',
+ 'thumbnailUrl':'obrazy/obraz3.jpg'
+},
+{ 
+ 'title':'Kambodza',
+ 'when':'2014-08-04',
+ 'thumbnailUrl':'obrazy/obraz4.jpg'
+},
+{ 
+ 'title':'Turcja',
+ 'when':'2014-08-04',
+ 'thumbnailUrl':'obrazy/obraz5.jpg'
+},
+{ 
+ 'title':'Chiny',
+ 'when':'2014-08-04',
+ 'thumbnailUrl':'obrazy/obraz6.jpg'
+},
+];
+
+$scope.sortList = [
+{
+'label':'Alfabetycznie',
+'value':'title'
+},
+{
+'label':'Chronologicznie',
+'value':'when'
+},
+{
+'label':'Od Najnowszych',
+'value':'-when'
+},
+];
+
+$scope.orderProp = 'when'; 
+});

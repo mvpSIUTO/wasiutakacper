@@ -1,0 +1,15 @@
+a
+{
+font-family: 'Montserrat', sans-serif;
+}
+p
+{
+font-family: 'Montserrat', sans-serif;
+}
+.container {
+	position: relative;
+	margin: auto;
+	width: 1078px;
+	height: auto;
+	overflow: hidden;
+}
